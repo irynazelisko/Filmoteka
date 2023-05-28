@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -135,6 +136,27 @@ h1 {
   margin-right: 10px;
 }
 
+/*modal-details*/
+.modal-details {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-height: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content-details{
+  padding: 20px;
+}
+
+/*about app modal*/
 
 .modal {
   position: fixed;
@@ -156,7 +178,7 @@ h1 {
   max-height: 80vh;
   overflow-y: auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  
+
 }
 
 .modal-content h2 {
@@ -172,7 +194,6 @@ h1 {
 
 .modal-content .modal-close-button {
   position: absolute;
- 
   top: 10px;
   right: 10px;
   font-size: 2rem;
@@ -186,6 +207,7 @@ h1 {
   color: #555;
 }
 
+/* loader */
 .loader-container {
   display: flex;
   align-items: center;
@@ -206,6 +228,7 @@ h1 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

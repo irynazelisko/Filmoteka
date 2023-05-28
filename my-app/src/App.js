@@ -117,7 +117,7 @@ const App = () => {
                 of the movie in the search field, and the application uses an API
                 to retrieve search results from the movie database.
               </p>
-              <button  onClick={closeModal}>
+              <button onClick={closeModal}>
                 Close
               </button>
             </div>

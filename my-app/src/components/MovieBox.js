@@ -31,9 +31,9 @@ const MovieCard = ({ movie, addToFavorites, removeFromFavorites, isFavorite }) =
         {movie.Year} - <span className="type">{movie.Type}</span>
       </p>
       {showDetails && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={toggleDetails}>&times;</span>
+        <div className="modal-details">
+          <div className="modal-content-details">
+            <span className="close-details" onClick={toggleDetails}>&times;</span>
             <img src={movie.Poster}></img>
             <h2>{movie.Title}</h2>
             <p>Actors: {movie.Actors}</p>
