@@ -10,12 +10,13 @@ const MovieCard = ({ movie, addToFavorites, removeFromFavorites, isFavorite }) =
   return (
     <div className="movie">
       <div className="image-container">
-        <img
+        < img
           src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/400'}
           alt={movie.Title}
           onClick={toggleDetails}
-          style={{ cursor: 'pointer' }}
+          className='movieBox-image'
         />
+ </div>
         {isFavorite ? (
           <button className="favorite-button" onClick={() => removeFromFavorites(movie)}>
             &#10084;&#65039;
@@ -25,7 +26,7 @@ const MovieCard = ({ movie, addToFavorites, removeFromFavorites, isFavorite }) =
             &#128148;
           </button>
         )}
-      </div>
+     
       <h3>{movie.Title}</h3>
       <p>
         {movie.Year} - <span className="type">{movie.Type}</span>
@@ -34,12 +35,12 @@ const MovieCard = ({ movie, addToFavorites, removeFromFavorites, isFavorite }) =
         <div className="modal-details">
           <div className="modal-content-details">
             <span className="close-details" onClick={toggleDetails}>&times;</span>
-            <img src={movie.Poster}></img>
+            <img className='modal-image' src={movie.Poster}></img>
             <h2>{movie.Title}</h2>
-            <p>Actors: {movie.Actors}</p>
-            <p>Plot: {movie.Plot}</p>
-            <p>Rating: {movie.imdbRating}</p>
-            <p>Genre: {movie.Genre}</p>
+            <p> <span>Actors:</span> {movie.Actors}</p>
+            <p> <span>Plot:</span>  {movie.Plot}</p>
+            <p> <span>Rating:</span> {movie.imdbRating}</p>
+            <p> <span>Genre:</span> {movie.Genre}</p>
           </div>
         </div>
       )}
