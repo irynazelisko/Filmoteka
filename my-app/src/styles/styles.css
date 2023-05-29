@@ -277,7 +277,7 @@ select {
   }
   .modal-details {
     width: 500px;
-    max-height: 700px;
+    max-height: 100%;
   }
   .modal .modal-content {
     max-width: 500px;
@@ -307,13 +307,17 @@ select {
     margin-top: 0.5rem;
   }
   .movie {
-    height: 300px;
-    width: 200px;
+    height: 450px;
+    width: 100%;
     margin: 0.25rem;
   }
   .modal-details {
     width: 300px;
-    max-height: 500px;
+    max-height: 100%;
+  }
+  .modal-details .modal-image {
+    max-width: 250px;
+    max-height: 100%;
   }
   .modal .modal-content {
     max-width: 300px;

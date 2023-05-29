@@ -4,7 +4,7 @@ import FavoriteMovies from './components/FavoriteMovies';
 import './styles/styles.css';
 
 const API_KEY = '8dd8db7e';
-const BASE_URL = 'http://www.omdbapi.com/?';
+const BASE_URL = 'https://www.omdbapi.com/?';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
