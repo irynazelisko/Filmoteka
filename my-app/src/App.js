@@ -117,6 +117,12 @@ const App = () => {
   const handleLogoClick = () => {
     window.location.reload();
   };
+  const handleSearchKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      searchMovies();
+    }
+  };
+  
 
   return (
     <div>
@@ -132,6 +138,7 @@ const App = () => {
             placeholder="Search Movie"
             value={searchTerm}
             onChange={handleSearchTermChange}
+            onKeyDown={handleSearchKeyPress}
           />
           <button className="button" onClick={searchMovies}>
             Search
