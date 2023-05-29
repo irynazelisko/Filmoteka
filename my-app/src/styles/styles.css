@@ -131,17 +131,16 @@ select {
 }
 
 .fav-movie {
-  padding-bottom: 15px;
-  font-size: 32px;
+  padding-bottom: 20px;
+  font-size: 34px;
+  text-align: center;
 }
 
 .favorite-movies-row {
-  white-space: nowrap;
-}
-
-.favorites {
-  display: inline-block;
-  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .modal-details {
@@ -250,5 +249,69 @@ select {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .app {
+    padding: 2rem;
+  }
+  header {
+    margin: 10px;
+  }
+  .search {
+    width: 90%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  select {
+    width: 100%;
+  }
+  .container {
+    margin-top: 1rem;
+  }
+  .movie {
+    height: 450px;
+    width: 250px;
+    margin: 0.5rem;
+  }
+  .modal-details {
+    width: 500px;
+    max-height: 700px;
+  }
+  .modal .modal-content {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .app {
+    padding: 1rem;
+  }
+  header {
+    margin: 5px;
+  }
+  .search {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+  }
+  select {
+    width: 100%;
+    font-size: 16px;
+  }
+  .container {
+    margin-top: 0.5rem;
+  }
+  .movie {
+    height: 300px;
+    width: 200px;
+    margin: 0.25rem;
+  }
+  .modal-details {
+    width: 300px;
+    max-height: 500px;
+  }
+  .modal .modal-content {
+    max-width: 300px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -173,7 +173,7 @@ const App = () => {
             ))}
           </div>
         )}
-        <div>
+        <div className="container">
           <FavoriteMovies
             movies={favorites}
             removeFromFavorites={removeFromFavorites}
