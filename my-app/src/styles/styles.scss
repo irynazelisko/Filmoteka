@@ -1,3 +1,5 @@
+@import 'mediaQuery';
+
 * {
   margin: 0;
   padding: 0;
@@ -39,14 +41,14 @@ header {
 }
 
 .search {
-  width: 70%;
+  width: 100%;
   margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1.5rem;
   border-radius: 3rem;
   background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   input {
     flex: 1;
@@ -55,6 +57,8 @@ header {
     color: #a1a1a1;
     background: #111;
     font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
   }
 
   button {
@@ -69,6 +73,13 @@ header {
       background-color: #a1a1a1;
     }
   }
+}
+
+.filters {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 select {
@@ -275,97 +286,3 @@ select {
     }
   }
 }
-@media screen and (max-width: 1920px) {
-  .app {
-    padding: 2rem;
-  }
-
-  header {
-    margin: 10px;
-  }
-
-  .search {
-    width: 90%;
-    margin: 1rem 0;
-    padding: 1rem;
-  }
-
-  select {
-    width: 100%;
-  }
-
-  .container {
-    margin-top: 1rem;
-  }
-
-  .movie {
-    height: 450px;
-    width: 250px;
-    margin: 0.5rem;
-  }
-
-  .modal-details {
-    width: 500px;
-    max-height: 100%;
-  }
-
-  .modal {
-    .modal-content {
-      max-width: 500px;
-    }
-  }
-}
-@media screen and (max-width: 320px) {
-  .app {
-    padding: 1rem;
-  }
-
-  header {
-    margin: 5px;
-  }
- 
-  .search {
-    width: 100%;
-    margin: 0.5rem 0;
-    padding: 0.75rem;
-    overflow: hidden; 
-  }
-
-  input {
-    width: 100%; 
-  }
-
-  select {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .container {
-    margin-top: 0.5rem;
-  }
-
-  .movie {
-    height: 450px;
-    width: 100%;
-    margin: 0.25rem;
-  }
- 
-
-  .modal-details {
-    width: 300px;
-    max-height: 100%;
-
-    .modal-image{
-      max-width: 250px;
-      max-height: 100%;
-    }
-  }
-  .modal {
-    .modal-content {
-      max-width: 300px;
-    }
-  }
- 
-}
-
-

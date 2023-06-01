@@ -1,3 +1,120 @@
+@media screen and (min-width: 320px) and (max-width: 1920px) {
+  .app {
+    padding: 2rem;
+  }
+  header {
+    margin: 10px;
+  }
+  .header-title {
+    font-size: 4rem;
+    position: relative;
+  }
+  .about-button {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    margin: 20px;
+    font-size: 16px;
+  }
+  .container {
+    margin-top: 1rem;
+  }
+  .movie {
+    height: 450px;
+    width: 250px;
+    margin: 0.5rem;
+  }
+  .modal .modal-content {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .header-title {
+    font-size: 38px;
+  }
+  .about-button {
+    top: 10px;
+    right: 0px;
+    margin: 20px;
+    font-size: 16px;
+  }
+  .modal-details {
+    width: 90%;
+    max-width: 310px;
+    height: 80vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+  }
+  .modal-details .modal-content-details h2 {
+    font-size: 24px;
+  }
+  .modal-details .modal-content-details .modal-image {
+    width: 200px;
+  }
+  .modal-details .modal-content-details .close-details {
+    font-size: 18px;
+  }
+  .search {
+    height: 60px;
+  }
+  .search input {
+    overflow: hidden;
+  }
+  .search input::-moz-placeholder {
+    font-size: 1.1rem;
+  }
+  .search input::placeholder {
+    font-size: 1.1rem;
+  }
+  .search button {
+    font-size: 0.8rem;
+    padding: 5px;
+    overflow: hidden;
+    width: 75px;
+  }
+  select {
+    font-size: 14px;
+    padding: 10px;
+    width: 200px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 600px) {
+  .modal-details {
+    width: 90%;
+    max-width: 400px;
+    height: 80vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+  }
+  .modal-details .modal-content-details h2 {
+    font-size: 24px;
+  }
+  .modal-details .modal-content-details .modal-image {
+    width: 300px;
+  }
+  .modal-details .modal-content-details .close-details {
+    font-size: 18px;
+  }
+  .search input {
+    font-size: 1rem;
+    overflow: hidden;
+    height: 25px;
+  }
+  .search button {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    overflow: hidden;
+  }
+  select {
+    font-size: 14px;
+    padding: 10px;
+    width: 200px;
+    overflow: hidden;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -38,14 +155,14 @@ header h1 {
 }
 
 .search {
-  width: 70%;
+  width: 100%;
   margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1.5rem;
   border-radius: 3rem;
   background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .search input {
   flex: 1;
@@ -54,6 +171,8 @@ header h1 {
   color: #a1a1a1;
   background: #111;
   font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 .search button {
   padding: 7px 14px;
@@ -65,6 +184,13 @@ header h1 {
 }
 .search button:hover {
   background-color: #a1a1a1;
+}
+
+.filters {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 select {
@@ -249,77 +375,5 @@ select {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@media screen and (max-width: 1920px) {
-  .app {
-    padding: 2rem;
-  }
-  header {
-    margin: 10px;
-  }
-  .search {
-    width: 90%;
-    margin: 1rem 0;
-    padding: 1rem;
-  }
-  select {
-    width: 100%;
-  }
-  .container {
-    margin-top: 1rem;
-  }
-  .movie {
-    height: 450px;
-    width: 250px;
-    margin: 0.5rem;
-  }
-  .modal-details {
-    width: 500px;
-    max-height: 100%;
-  }
-  .modal .modal-content {
-    max-width: 500px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .app {
-    padding: 1rem;
-  }
-  header {
-    margin: 5px;
-  }
-  .search {
-    width: 100%;
-    margin: 0.5rem 0;
-    padding: 0.75rem;
-    overflow: hidden;
-  }
-  input {
-    width: 100%;
-  }
-  select {
-    width: 100%;
-    font-size: 16px;
-  }
-  .container {
-    margin-top: 0.5rem;
-  }
-  .movie {
-    height: 450px;
-    width: 100%;
-    margin: 0.25rem;
-  }
-  .modal-details {
-    width: 300px;
-    max-height: 100%;
-  }
-  .modal-details .modal-image {
-    max-width: 250px;
-    max-height: 100%;
-  }
-  .modal .modal-content {
-    max-width: 300px;
   }
 }/*# sourceMappingURL=styles.css.map */
