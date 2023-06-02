@@ -17,6 +17,7 @@ The general idea of your "Filmoteka" application is to find and store movies, wh
 ## Technologies
 * React 
 * OMDB API
+* SCSS
 
 ## How to Load the App
 
