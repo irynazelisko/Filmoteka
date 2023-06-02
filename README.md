@@ -1,10 +1,12 @@
 #                                                       FILMOTEKA 
 
 # Table of Contents
-
-[How to Load the App](#How-to-Load-the-App)
+[ABOUT the App](#ABOUT-the-App) </br>
+[How to Load the App](#How-to-Load-the-App) </br>
 [How get OMDB API](#How-get-OMDB-API)
 
+## ABOUT the App
+The general idea of your "Filmoteka" application is to find and store movies, which allows you to conveniently organize your favorite movies and have access to them from one place.
 
 ## How to Load the App
 
