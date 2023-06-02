@@ -1,5 +1,5 @@
 <p align="center">
- # FILMOTEKA 
+ FILMOTEKA 
 </p>                                                  
 
 # Table of Contents
