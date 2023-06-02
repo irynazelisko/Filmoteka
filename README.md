@@ -1,4 +1,6 @@
-#                                                       FILMOTEKA 
+<p align="center">
+ # FILMOTEKA 
+</p>                                                  
 
 # Table of Contents
 [ABOUT the App](#ABOUT-the-App) </br>
