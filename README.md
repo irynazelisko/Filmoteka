@@ -4,11 +4,16 @@
 
 # Table of Contents
 [ABOUT the App](#ABOUT-the-App) </br>
+[Technologies](#Technologies) </br>
 [How to Load the App](#How-to-Load-the-App) </br>
 [How get OMDB API](#How-get-OMDB-API)
 
 ## ABOUT the App
 The general idea of your "Filmoteka" application is to find and store movies, which allows you to conveniently organize your favorite movies and have access to them from one place.
+
+## Technologies
+* React 
+* OMDB API
 
 ## How to Load the App
 
