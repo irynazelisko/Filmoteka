@@ -1,5 +1,5 @@
 <h1 align="center">
- FILMOTEKA 
+🎬 FILMOTEKA 🎬 
 </h1>                                                  
 
 # Table of Contents
