@@ -1,6 +1,8 @@
 <h1 align="center">
 🎬 FILMOTEKA 🎬 
-</h1>                                                  
+</h1>        
+
+***
 
 # Table of Contents
 [ABOUT the App](#ABOUT-the-App) </br>
@@ -38,6 +40,6 @@ React Testing Library is a powerful testing library for testing React components
 To install @testing-library/react, you can follow these steps: </br>
 
 Run the following command to install @testing-library/react 
-npm install --save-dev @testing-library/react </br>
-Run tests using the npm test command;
+- npm install --save-dev @testing-library/react </br>
+- Run tests using the npm test command;
 
