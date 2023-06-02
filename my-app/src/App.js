@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import MovieCard from './components/MovieBox';
+import MovieCard from './components/MovieCard';
 import FavoriteMovies from './components/FavoriteMovies';
 import './styles/styles.css';
 

@@ -18,11 +18,17 @@ const MovieCard = ({ movie, addToFavorites, removeFromFavorites, isFavorite }) =
         />
  </div>
         {isFavorite ? (
-          <button className="favorite-button" onClick={() => removeFromFavorites(movie)}>
+          <button className="favorite-button"
+           onClick={() => removeFromFavorites(movie)}
+           data-testid="favorite-button"
+           >
             &#10084;&#65039;
           </button>
         ) : (
-          <button className="favorite-button" onClick={() => addToFavorites(movie)}>
+          <button className="favorite-button" 
+          onClick={() => addToFavorites(movie)}
+          data-testid="favorite-button"
+          >
             &#128148;
           </button>
         )}

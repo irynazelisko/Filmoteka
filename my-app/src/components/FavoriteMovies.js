@@ -17,7 +17,10 @@ const FavoriteMovies = ({ movies, removeFromFavorites }) => {
                                     />
                                     <h3>{movie.Title}</h3>
                                     <p>{movie.Year}</p>
-                                    <button className="favorite-button" onClick={() => removeFromFavorites(movie)}>
+                                    <button className="favorite-button"
+                                     onClick={() => removeFromFavorites(movie)}
+                                     data-testid={`remove-button-${movie.imdbID}`}
+                                     >
                                         &#10084;&#65039;
                                     </button>
 
@@ -30,9 +33,7 @@ const FavoriteMovies = ({ movies, removeFromFavorites }) => {
                     <p>No favorite movies yet.</p>
                 )}
             </div>
-
         </div>
-
     );
 };
 
