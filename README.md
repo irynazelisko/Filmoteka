@@ -37,7 +37,7 @@ React Testing Library is a powerful testing library for testing React components
 
 To install @testing-library/react, you can follow these steps: </br>
 
-* Run the following command to install @testing-library/react 
+Run the following command to install @testing-library/react 
 npm install --save-dev @testing-library/react </br>
-* run tests using the npm test command;
+Run tests using the npm test command;
 
